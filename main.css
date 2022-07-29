@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#e6eceb;
+    --fontcolor:#171c24;
+}
+
+body{
+    background-color: #e6eceb;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin:5rem;
+    display: flex;
+    padding: 3rem;
+   
+    
+}
+.right{
+    flex: 1;
+}
+.middle{
+    flex: 2;
+    padding-left: 1rem;
+   
+}
+.left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+   
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 1rem;
+    color: var(--fontcolor);
+}
+.avatar{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left__middle{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.div-btn{
+    background-color: #86aa9e;
+    width: 60%;
+    height: 40px;
+    border-radius: 50px;
+}
+.div-btn button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #86aa9e;
+    border-radius: 50px;
+    transition: background-color 1s;
+    border-radius: 60px;
+}
+.rule{
+    background-color: #afebd7;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    /* padding-top: 0.5rem; */
+}
+.icon-btn{
+ /* background-color: var(--primary-color); */
+ color: var(--primary-color);
+ padding-right: 0.5rem;
+ border-radius: 50%;
+ 
+}
+.div-btn button:hover{
+    background-color: #174f3c;
+    color: var(--primary-color);
+}
+#form-capture-data{
+    display: grid;
+    grid-template-columns: repeat(2,250px);
+   
+}
+#form-capture-data input{
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    gap: 1;
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    color: #174f3c;
+    outline-color: #86aa9e;
+    position: static;
+    
+}
+.input-center{
+    margin-left: 0.5rem;
+}
+#btn-submit{
+    width: 40px;
+    height: 40px;
+    margin-left: 2rem;
+    background-color: #86aa9e;
+    color: whitesmoke;
+    font-weight: 900;
+    font-size: 23px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 1s;
+}
+#btn-submit:hover{
+    background-color: #174f3c;
+    color: whitesmoke;
+}
+
+
+.task-item{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    padding: 0.7rem;
+    border-radius: 20px;
+    transition: background-color 1.5s;
+    padding-top: 2rem;
+    
+
+}
+.task-item:hover{
+    background-color: #baded2;
+}
+
+.item-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
+    color: var(--fontcolor);
+    /* border-bottom: 2px solid var(--primary-color); */
+}
+.up-del-btns{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.btn-up{
+    border: none;
+    background-color: #86aa9e;
+    color: whitesmoke;
+    border-radius: 5px;
+    /* padding:; */
+    width: 50px;
+    height: 40px;
+}
+.btn-up:hover{
+    background-color: #174f3c;
+}
+button.btn-active{
+    background-color: #174f3c;
+    color: white;
+}
+.body{
+    padding-top: 0.7rem;
+    padding-bottom: 1rem;
+}
+.due-date {
+   color: gray;
+   background-color:whitesmoke;
+   width: 12rem;
+   padding: 0.5rem 1rem;
+   border-radius: 60px;
+   display: flex; 
+   gap: 0.5rem;
+}
+.task-title{
+    color: lightgray;
+}
+
+#complete-btn{
+    border-radius: 50%;
+}
+#btn-submit{
+    width: 100px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+@media only screen and (max-width: 1200px) {
+    .container{
+        flex-direction: column;
+    }
+    .left__middle{
+        flex-direction: row;
+        margin-bottom: 1rem;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .container{
+        flex-direction: column;
+        width: 100vw;
+        margin: 0;
+    }
+    .left__middle{
+        flex-direction: row;
+        margin-bottom: 1rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .container{
+        flex-direction: column;
+        width: 100vw;
+        margin: 0;
+    }
+    .left__middle{
+        flex-direction: row;
+        margin-bottom: 1rem;
+    }
+        #form-capture-data {
+            display: grid;
+            grid-template-columns: repeat(1, 250px);
+    
+        }
+}
